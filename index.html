@@ -7,20 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>42, la réponse à toutes vos questions</title>
 
+            <!--Favicon-->
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" >
+
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="./main.css" type="text/css">
+    <script src="https://kit.fontawesome.com/5944b63bf2.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body class="container-fluid bg-dark text-light">
-    <h1>La réponse à toutes vos questions</h1>
-    <h2>Enfin un site qui trouve toutes les réponses que vous recherchez</h2>
+<body class="container-fluid bg-dark text-light text-center d-flex flex-column justify-content-center align-items-center">
+    <h1 class="mb-5">La réponse à toutes vos questions</h1>
+    <div class="d-flex mb-5 pt-5 pb-5 justify-content-around align-items-center w-100 bg-info text-dark">
+        <img src="./img/42_answer.png" alt="La réopnse que vous recherchez" >
+        <h2>Enfin un site qui trouve toutes les réponses que vous recherchez</h2>
+    </div>
 
-    <p>Entrez votre requète</p>
+    <form class="w-50" id="searchForm" novalidate>
+        <label for="search" class="form-label">Quel est votre questionnement : </label>
+        <input type="text" class="form-control text-center" name="search" id="search"  placeholder="Quelle est la réponse à toutes les questions ?">
+
+        <br>
+        <button type="submit" class="btn btn-primary mt-2">Demande à ton ami</button>
+        <button type="reset" class="btn btn-danger mt-2"> Finalement je ne veux pas savoir</button>
+
+    </form>
 
 
+    <script src="./script.js" ></script>
 
 </body>
 
